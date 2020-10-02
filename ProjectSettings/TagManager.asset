@@ -10,6 +10,7 @@ TagManager:
   - Building
   - ShopBuilding
   - Sickle
+  - Vegetable
   layers:
   - Default
   - TransparentFX
