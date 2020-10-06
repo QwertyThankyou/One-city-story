@@ -24,14 +24,14 @@ public class Farm : MonoBehaviour
     void Update()
     {
         _time += Time.deltaTime;
-        if (_time >= 60.0f && !_particle.isPlaying)
+        if (_time >= 60.0f)
         {
             _particle.Play();
             foreach (var trans in _vegetableTrans)
             {
                 Instantiate(vegetable, trans.position, Quaternion.identity);
             }
-
+            _time = 0.0f;
         }
     }
 
