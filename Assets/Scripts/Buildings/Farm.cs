@@ -8,7 +8,7 @@ public class Farm : MonoBehaviour
     private ParticleSystem _particle;
 
     public GameObject vegetable;
-    public List<Transform> _vegetableTrans;
+    public List<GameObject> _vegetableTrans;
 
 
     private float _time;
@@ -24,12 +24,13 @@ public class Farm : MonoBehaviour
     void Update()
     {
         _time += Time.deltaTime;
-        if (_time >= 60.0f)
+        if (_time >= 30.0f)
         {
             _particle.Play();
             foreach (var trans in _vegetableTrans)
             {
-                Instantiate(vegetable, trans.position, Quaternion.identity);
+                if (trans.GetComponent<VegSpawnColl>().isHave == false)
+                    Instantiate(vegetable, trans.transform.position, Quaternion.identity);
             }
             _time = 0.0f;
         }
