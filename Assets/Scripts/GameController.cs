@@ -101,7 +101,7 @@ public class GameController : MonoBehaviour
             _stringSeconds = ((int)gameSeconds).ToString();
             _stringMinutes = ((int)gameMinutes).ToString();
 
-            textTime.text = "День " + _stringDayNumber + "\n" + _stringMinutes + ":00 AM";
+           // textTime.text = "День " + _stringDayNumber + "\n" + _stringMinutes + ":00 AM";
         }
     }
     
