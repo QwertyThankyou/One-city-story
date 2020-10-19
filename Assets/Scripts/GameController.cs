@@ -16,6 +16,9 @@ public class GameController : MonoBehaviour
     public GameObject shadow;
     public Vector3 shadowDefPos;
 
+    public GameObject peopleHouse;
+    public GameObject huntingHouse;
+
     //
     //variables
     //
@@ -64,6 +67,9 @@ public class GameController : MonoBehaviour
         _timeStop = false;
         shadowDefPos = shadow.transform.position;
         StartCoroutine(CTime());
+
+        peopleHouse.SetActive(false);
+        huntingHouse.SetActive(false);   // Кто будет делать, это заменить при создании сохранения
     }
     
     
@@ -139,5 +145,15 @@ public class GameController : MonoBehaviour
         }
         indexShop = -1;
         buying = false;
+    }
+
+    public void PeopleHouseOpen()
+    {
+        peopleHouse.SetActive(true);
+    }
+
+    public void HuntingHouseOpen()
+    {
+        huntingHouse.SetActive(true);
     }
 }

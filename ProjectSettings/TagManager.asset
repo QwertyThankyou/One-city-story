@@ -11,6 +11,8 @@ TagManager:
   - ShopBuilding
   - Sickle
   - Vegetable
+  - Axe
+  - Wood
   layers:
   - Default
   - TransparentFX
