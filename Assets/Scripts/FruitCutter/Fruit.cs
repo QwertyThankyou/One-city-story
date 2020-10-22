@@ -8,7 +8,7 @@ public class Fruit : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.y < 1f)
+        if (transform.position.y < .8f)
             Destroy(this.gameObject);
     }
 }
