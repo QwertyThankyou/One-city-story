@@ -13,6 +13,9 @@ TagManager:
   - Vegetable
   - Axe
   - Wood
+  - Pointer
+  - UI
+  - InteractionZone
   layers:
   - Default
   - TransparentFX

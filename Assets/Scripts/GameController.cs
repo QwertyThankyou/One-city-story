@@ -58,7 +58,6 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
-        money = 100;
         selectedCell = null;
         buildingObject = null;
         buying = false;
