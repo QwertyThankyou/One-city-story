@@ -1,17 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &6249508664625414182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 559817673604255746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4533e702e91a54f4cbbec8d0fb246fa4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &6572117108207611453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33,6 +21,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3180760568806133333}
+  - component: {fileID: 3118598269392630261}
   m_Layer: 0
   m_Name: LumberjacksHut
   m_TagString: Untagged
@@ -55,6 +44,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &3118598269392630261
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8794907386722318829}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1ca289a9f4532554197d17111454782a, type: 2}
+  m_CullingMode: 2
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &4638350940565805713
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71,6 +79,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 322297047225342817, guid: 92a08a0317ae8ad4abe6cefca22ba0bf,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.43
       objectReference: {fileID: 0}
     - target: {fileID: 438123119138715886, guid: 92a08a0317ae8ad4abe6cefca22ba0bf,
         type: 3}
@@ -126,7 +139,7 @@ PrefabInstance:
         type: 3}
       propertyPath: onDetachFromHand.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 6249508664625414182}
+      objectReference: {fileID: 0}
     - target: {fileID: 4551822724966644965, guid: 92a08a0317ae8ad4abe6cefca22ba0bf,
         type: 3}
       propertyPath: onDetachFromHand.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -412,12 +425,6 @@ PrefabInstance:
 --- !u!4 &558580448461899053 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5160776007779278780, guid: 92a08a0317ae8ad4abe6cefca22ba0bf,
-    type: 3}
-  m_PrefabInstance: {fileID: 4638350940565805713}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &559817673604255746 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5159547029011876499, guid: 92a08a0317ae8ad4abe6cefca22ba0bf,
     type: 3}
   m_PrefabInstance: {fileID: 4638350940565805713}
   m_PrefabAsset: {fileID: 0}

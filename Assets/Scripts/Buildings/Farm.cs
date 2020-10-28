@@ -24,7 +24,7 @@ public class Farm : MonoBehaviour
     void Update()
     {
         _time += Time.deltaTime;
-        if (_time >= 30.0f)
+        if (_time >= 10.0f)
         {
             _particle.Play();
             foreach (var trans in _vegetableTrans)
