@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 120776814487572746}
   m_Layer: 0
   m_Name: Pointer
-  m_TagString: Untagged
+  m_TagString: Pointer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17679bcfcf3af3a469c6fd2ba436eac5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultLength: 5
+  defaultLength: 3
   dot: {fileID: 1366594535547466}
 --- !u!20 &20124302818794546
 Camera:
@@ -72,7 +72,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.01
-  far clip plane: 1000
+  far clip plane: 3
   field of view: 1
   orthographic: 0
   orthographic size: 5
@@ -99,7 +99,7 @@ LineRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1295072978053074}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 0
   m_MotionVectors: 0
