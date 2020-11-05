@@ -5206,6 +5206,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.065
       objectReference: {fileID: 0}
+    - target: {fileID: 1928641345562378710, guid: 45531ae504092924d9681206f8e4f6e3,
+        type: 3}
+      propertyPath: moveWithTransform
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928641345562378710, guid: 45531ae504092924d9681206f8e4f6e3,
+        type: 3}
+      propertyPath: RotationBySpeedModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2036551271073577569, guid: 45531ae504092924d9681206f8e4f6e3,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -5929,7 +5939,7 @@ PrefabInstance:
     - target: {fileID: 8859917079041092266, guid: 45531ae504092924d9681206f8e4f6e3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 42
+      value: 43
       objectReference: {fileID: 0}
     - target: {fileID: 8859917079041092266, guid: 45531ae504092924d9681206f8e4f6e3,
         type: 3}

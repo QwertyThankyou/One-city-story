@@ -10,17 +10,18 @@ public class Wood : MonoBehaviour
     public int ecology = 1;
 
     private bool _isHit = false;
-
+    private Animator animator;
     void Start()
     {
         _gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
-        
+        animator = GetComponent<Animator>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Axe") && _isHit == false)
         {
+            animator.SetTrigger("Hit");
             _isHit = true;
             countHit--;
             if (countHit == 0)

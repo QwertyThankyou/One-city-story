@@ -10710,9 +10710,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b558aa8ebb866bd4da56c536a7b4eb71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorVisual: {fileID: 0}
-  maxLength: 10
-  _laserBeamBehavior: 0
 --- !u!4 &569338973
 Transform:
   m_ObjectHideFlags: 0
