@@ -19,6 +19,7 @@ public class FruitSpawner : MonoBehaviour{
             temp.velocity = new Vector3(-10f, 10f, 0f);
             temp.angularVelocity = new Vector3(Random.Range(-5f, 5f), 0f, Random.Range(-5f, 5f));
             temp.useGravity = true;
+            temp.AddTorque(Random.Range(-7.5f, 7.5f), Random.Range(-7.5f, 7.5f), Random.Range(-7.5f, 7.5f));
 
             Vector3 pos = transform.position;
             pos.x += Random.Range(-1f, 1f);

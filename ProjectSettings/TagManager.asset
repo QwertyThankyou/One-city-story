@@ -16,6 +16,7 @@ TagManager:
   - Pointer
   - UI
   - InteractionZone
+  - Katana
   layers:
   - Default
   - TransparentFX

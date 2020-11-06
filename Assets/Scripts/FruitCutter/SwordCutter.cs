@@ -1,10 +1,16 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using System.Collections;
 
 [RequireComponent (typeof(Rigidbody))]
 public class SwordCutter : MonoBehaviour {
 
 	public Material capMaterial;
+
+	public void Start()
+	{
+		
+	}
 
 	void OnCollisionEnter(Collision collision)
 	{
@@ -18,7 +24,7 @@ public class SwordCutter : MonoBehaviour {
 			MeshCollider temp = pieces[1].AddComponent<MeshCollider>();
 			temp.convex = true;
 		}
-		//Destroy(pieces[1], 1);
+		Destroy(pieces[1], 1);
 	}
 
 
