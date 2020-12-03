@@ -90,6 +90,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.909
       objectReference: {fileID: 0}
+    - target: {fileID: 302737698585450701, guid: d73c71fd43bc3a047a8d53c85fcce850,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 302737698585450701, guid: d73c71fd43bc3a047a8d53c85fcce850,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -15.75
+      objectReference: {fileID: 0}
     - target: {fileID: 380649693108091267, guid: d73c71fd43bc3a047a8d53c85fcce850,
         type: 3}
       propertyPath: m_StaticEditorFlags
