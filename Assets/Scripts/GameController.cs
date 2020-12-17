@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
@@ -18,6 +20,9 @@ public class GameController : MonoBehaviour
 
     public GameObject peopleHouse;
     public GameObject huntingHouse;
+
+    public GameObject loseUI;
+    public GameObject winUI;
 
     //
     //variables
@@ -37,10 +42,6 @@ public class GameController : MonoBehaviour
 
     public int availableEnergy;
     public int neededEnergy;
-    
-    
-    
-    
     
     public float gameSeconds;
     public float gameMinutes;
@@ -69,6 +70,9 @@ public class GameController : MonoBehaviour
 
         peopleHouse.SetActive(false);
         huntingHouse.SetActive(false);   // Кто будет делать, это заменить при создании сохранения
+        
+        loseUI.SetActive(false);
+        winUI.SetActive(false);
     }
     
     
@@ -103,10 +107,20 @@ public class GameController : MonoBehaviour
            // textTime.text = "День " + _stringDayNumber + "\n" + _stringMinutes + ":00 AM";
         }
     }
-    
-    
-    
-    
+
+    private void Update()
+    {
+        if (money <= 0 || ecology <= 0)
+        {
+            loseUI.SetActive(true);
+        }
+
+        if (money >= 1000)
+        {
+            winUI.SetActive(true);
+        }
+    }
+
 
     public void StartBuild(int index)
     {
@@ -154,5 +168,21 @@ public class GameController : MonoBehaviour
     public void HuntingHouseOpen()
     {
         huntingHouse.SetActive(true);
+    }
+    
+    // UI поражения и победы
+    public void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void GoToMenu()
+    {
+        SceneManager.LoadScene("Main Menu");
+    }
+
+    public void ContinueGame()
+    {
+        winUI.SetActive(false);
     }
 }
