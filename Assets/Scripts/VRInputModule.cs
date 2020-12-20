@@ -7,6 +7,8 @@ public class VRInputModule : BaseInputModule
 
     public PointerEventData Data { get; private set; } = null;
 
+    public AudioManager audioManager;
+
     protected override void Start()
     {
         Data = new PointerEventData(eventSystem);
@@ -28,6 +30,8 @@ public class VRInputModule : BaseInputModule
         Data.pointerPress = ExecuteEvents.GetEventHandler<IPointerClickHandler>(Data.pointerPressRaycast.gameObject);
 
         ExecuteEvents.Execute(Data.pointerPress, Data, ExecuteEvents.pointerDownHandler);
+        
+        audioManager.Play("UISelection");
     }
 
     public void Release()

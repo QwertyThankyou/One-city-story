@@ -12,7 +12,7 @@ public class Pointer : MonoBehaviour
     public Camera Camera { get; private set; } = null;
 
     private LineRenderer lineRenderer = null;
-    private SteamInputModule inputModule = null;
+    private VRInputModule inputModule = null;
 
     private void Awake()
     {
@@ -25,7 +25,7 @@ public class Pointer : MonoBehaviour
     private void Start()
     {
         // current.currentInputModule does not work
-        inputModule = EventSystem.current.gameObject.GetComponent<SteamInputModule>();
+        inputModule = EventSystem.current.gameObject.GetComponent<VRInputModule>();
     }
 
     private void Update()
@@ -38,17 +38,6 @@ public class Pointer : MonoBehaviour
         // Use default or distance
         PointerEventData data = inputModule.Data;
         RaycastHit hit = CreateRaycast();
-
-        /*if (hit.collider.CompareTag("UI") && lineRenderer.enabled == false)
-        {
-            lineRenderer.enabled = true;
-            dot.SetActive(true);
-        }
-        else if (lineRenderer.enabled)
-        {
-            lineRenderer.enabled = false;
-            dot.SetActive(false);
-        }*/
 
         // If nothing is hit, set do default length
         float colliderDistance = hit.distance == 0 ? defaultLength : hit.distance;

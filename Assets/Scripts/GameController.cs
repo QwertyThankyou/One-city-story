@@ -31,6 +31,11 @@ public class GameController : MonoBehaviour
     public AudioClip nightWalk;
     public AudioClip nightRain;
 
+    [Header("Pointer")] 
+    public GameObject pointer;
+    public GameObject inputModule;
+    
+
     //
     //variables
     //
@@ -64,6 +69,8 @@ public class GameController : MonoBehaviour
     public int speedMultiplier = 1;
 
     private bool _timeStop;
+
+    private bool _isContinue = false;
 
     void Start()
     {
@@ -137,11 +144,13 @@ public class GameController : MonoBehaviour
         if (money <= 0 || ecology <= 0)
         {
             loseUI.SetActive(true);
+            ActiveInput();
         }
 
-        if (money >= 1000)
+        if (money >= 1000 && !_isContinue)
         {
             winUI.SetActive(true);
+            ActiveInput();
         }
 
         if (_lastMoney < money)
@@ -204,6 +213,12 @@ public class GameController : MonoBehaviour
         huntingHouse.SetActive(true);
         audioManager.Play("Upgrade");
     }
+
+    private void ActiveInput()
+    {
+        pointer.SetActive(true);
+        inputModule.SetActive(true);
+    }
     
     // UI поражения и победы и звук
     public void Restart()
@@ -219,10 +234,6 @@ public class GameController : MonoBehaviour
     public void ContinueGame()
     {
         winUI.SetActive(false);
-    }
-
-    public void Sound()
-    {
-        audioManager.Play("UISelection");
+        _isContinue = true;
     }
 }

@@ -11,11 +11,9 @@ public class SteamInputModule : VRInputModule
     public override void Process()
     {
         base.Process();
-
         // Press
         if (m_Click.GetStateDown(m_Source))
             Press();
-
         // Release
         if (m_Click.GetStateUp(m_Source))
             Release();
