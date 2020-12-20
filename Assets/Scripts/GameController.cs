@@ -24,10 +24,17 @@ public class GameController : MonoBehaviour
     public GameObject loseUI;
     public GameObject winUI;
 
+    [Header("Music")]
+    public AudioManager audioManager;
+    public AudioClip startMusic;
+    public AudioClip reNovation;
+    public AudioClip nightWalk;
+    public AudioClip nightRain;
+
     //
     //variables
     //
-
+    [Header("Variables")]
     public int prestige;
     public int ecology;
 
@@ -38,6 +45,7 @@ public class GameController : MonoBehaviour
     //public int arrivingPopulation;
 
     public int money;
+    private int _lastMoney;
     //public int income;
 
     public int availableEnergy;
@@ -73,12 +81,28 @@ public class GameController : MonoBehaviour
         
         loseUI.SetActive(false);
         winUI.SetActive(false);
+        
+        audioManager.Play("ForestBackground");
+        audioManager.Play("BirdSinging");
+        audioManager.Play("StartMusic");
+        StartCoroutine(Music());
+        
+        _lastMoney = money;
     }
-    
-    
-    
-    
-    
+
+
+    private IEnumerator Music()
+    {
+        yield return new WaitForSeconds(startMusic.length + 300f);
+        audioManager.Play("reNovation");
+        yield return new WaitForSeconds(reNovation.length + 300f);
+        audioManager.Play("NightWalk");
+        yield return new WaitForSeconds(nightWalk.length + 300f);
+        audioManager.Play("NightRain");
+        StopCoroutine(Music());
+    }
+
+
     private IEnumerator CTime()
     {
         while (!_timeStop)
@@ -119,6 +143,14 @@ public class GameController : MonoBehaviour
         {
             winUI.SetActive(true);
         }
+
+        if (_lastMoney < money)
+        {
+            audioManager.Play("Coin");
+            _lastMoney = money;
+        }
+
+        if (_lastMoney > money) _lastMoney = money;
     }
 
 
@@ -151,6 +183,7 @@ public class GameController : MonoBehaviour
             selectedCell.status = true;
             selectedCell = null;
             shadow.transform.position = shadowDefPos;
+            audioManager.Play("Buildings");
         }
         foreach (Cell tmp in cells)
         {
@@ -163,14 +196,16 @@ public class GameController : MonoBehaviour
     public void PeopleHouseOpen()
     {
         peopleHouse.SetActive(true);
+        audioManager.Play("Upgrade");
     }
 
     public void HuntingHouseOpen()
     {
         huntingHouse.SetActive(true);
+        audioManager.Play("Upgrade");
     }
     
-    // UI поражения и победы
+    // UI поражения и победы и звук
     public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
@@ -184,5 +219,10 @@ public class GameController : MonoBehaviour
     public void ContinueGame()
     {
         winUI.SetActive(false);
+    }
+
+    public void Sound()
+    {
+        audioManager.Play("UISelection");
     }
 }

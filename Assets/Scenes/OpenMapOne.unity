@@ -27154,8 +27154,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mixerGroup: {fileID: 0}
   sounds:
-  - name: AxeKick
-    clip: {fileID: 0}
+  - name: AxeChop
+    clip: {fileID: 8300000, guid: 922e617efc4cacf4ba9ac076a8a96df4, type: 3}
     volume: 1
     volumeVariance: 0
     pitch: 1
@@ -27163,8 +27163,8 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
-  - name: KeepItem
-    clip: {fileID: 0}
+  - name: GrabItem
+    clip: {fileID: 8300000, guid: 8f83e358db8041245a1724910a3a0db3, type: 3}
     volume: 1
     volumeVariance: 0
     pitch: 1
@@ -27172,8 +27172,8 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
-  - name: WatermellonCut
-    clip: {fileID: 0}
+  - name: WatermellonCut1
+    clip: {fileID: 8300000, guid: c67217a615067d4409694c3c2d672fe7, type: 3}
     volume: 1
     volumeVariance: 0
     pitch: 1
@@ -27182,25 +27182,25 @@ MonoBehaviour:
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
   - name: ForestBackground
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 2126db2fe3bc1d84f8fd1cec33b81ad2, type: 3}
     volume: 0.5
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
-    loop: 0
+    loop: 1
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
   - name: BirdSinging
-    clip: {fileID: 0}
-    volume: 1
+    clip: {fileID: 8300000, guid: 9185553256b369248b6db1d106ae174e, type: 3}
+    volume: 0.5
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
-    loop: 0
+    loop: 1
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
-  - name: CarrotInBox
-    clip: {fileID: 0}
+  - name: Coin
+    clip: {fileID: 8300000, guid: 69f8c9c146f121b4f98b9f959f5de135, type: 3}
     volume: 1
     volumeVariance: 0
     pitch: 1
@@ -27209,7 +27209,7 @@ MonoBehaviour:
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
   - name: UISelection
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 0f190ae97d377a24680660e57d2122a3, type: 3}
     volume: 1
     volumeVariance: 0
     pitch: 1
@@ -27218,7 +27218,7 @@ MonoBehaviour:
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
   - name: Buildings
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 3d7675ee6e49cfc42b7e8a64dfd4618b, type: 3}
     volume: 1
     volumeVariance: 0
     pitch: 1
@@ -27227,7 +27227,7 @@ MonoBehaviour:
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
   - name: Upgrade
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: d687914bd92868c47a9e7e843584e5fb, type: 3}
     volume: 1
     volumeVariance: 0
     pitch: 1
@@ -27235,9 +27235,54 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
-  - name: MusicBackground
-    clip: {fileID: 0}
-    volume: 0.7
+  - name: StartMusic
+    clip: {fileID: 8300000, guid: 70f34392dd78fb048b4646fc24698c66, type: 3}
+    volume: 0.4
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: WatermellonCut2
+    clip: {fileID: 8300000, guid: 108d6c282a13b3644bc037ac43de9f04, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: NightRain
+    clip: {fileID: 8300000, guid: 63c58da008aeb1844b62d3bd03d58dce, type: 3}
+    volume: 0.5
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: NightWalk
+    clip: {fileID: 8300000, guid: bdf0b7769ecf20945bd2ce54394ab183, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: reNovation
+    clip: {fileID: 8300000, guid: b507634786f2c3942905121162fff579, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: TreeFall
+    clip: {fileID: 8300000, guid: 4117454cff16b29489bd2f02df3a88ff, type: 3}
+    volume: 1
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
@@ -29471,6 +29516,11 @@ MonoBehaviour:
   huntingHouse: {fileID: 1948352792}
   loseUI: {fileID: 919145296}
   winUI: {fileID: 842944329}
+  audioManager: {fileID: 1325327100}
+  startMusic: {fileID: 8300000, guid: 70f34392dd78fb048b4646fc24698c66, type: 3}
+  reNovation: {fileID: 8300000, guid: b507634786f2c3942905121162fff579, type: 3}
+  nightWalk: {fileID: 8300000, guid: bdf0b7769ecf20945bd2ce54394ab183, type: 3}
+  nightRain: {fileID: 8300000, guid: 63c58da008aeb1844b62d3bd03d58dce, type: 3}
   prestige: 0
   ecology: 0
   maxPopulation: 0
