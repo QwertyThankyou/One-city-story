@@ -70,36 +70,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2749247346967533827}
     m_Modifications:
-    - target: {fileID: 302737698585450701, guid: d73c71fd43bc3a047a8d53c85fcce850,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 302737698585450701, guid: d73c71fd43bc3a047a8d53c85fcce850,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 302737698585450701, guid: d73c71fd43bc3a047a8d53c85fcce850,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 302737698585450701, guid: d73c71fd43bc3a047a8d53c85fcce850,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.909
-      objectReference: {fileID: 0}
-    - target: {fileID: 302737698585450701, guid: d73c71fd43bc3a047a8d53c85fcce850,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 302737698585450701, guid: d73c71fd43bc3a047a8d53c85fcce850,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -15.75
-      objectReference: {fileID: 0}
     - target: {fileID: 380649693108091267, guid: d73c71fd43bc3a047a8d53c85fcce850,
         type: 3}
       propertyPath: m_StaticEditorFlags

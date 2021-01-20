@@ -27169,7 +27169,7 @@ MonoBehaviour:
     volume: 1
     volumeVariance: 0
     pitch: 1
-    pitchVariance: 0
+    pitchVariance: 0.25
     loop: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
@@ -27187,7 +27187,7 @@ MonoBehaviour:
     volume: 1
     volumeVariance: 0
     pitch: 1
-    pitchVariance: 0
+    pitchVariance: 0.25
     loop: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
@@ -27211,10 +27211,10 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Coin
     clip: {fileID: 8300000, guid: 69f8c9c146f121b4f98b9f959f5de135, type: 3}
-    volume: 1
+    volume: 0.5
     volumeVariance: 0
     pitch: 1
-    pitchVariance: 0
+    pitchVariance: 0.25
     loop: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
@@ -27229,7 +27229,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Buildings
     clip: {fileID: 8300000, guid: 3d7675ee6e49cfc42b7e8a64dfd4618b, type: 3}
-    volume: 1
+    volume: 0.5
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
@@ -27274,7 +27274,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: NightWalk
     clip: {fileID: 8300000, guid: bdf0b7769ecf20945bd2ce54394ab183, type: 3}
-    volume: 1
+    volume: 0.5
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
@@ -27283,7 +27283,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: reNovation
     clip: {fileID: 8300000, guid: b507634786f2c3942905121162fff579, type: 3}
-    volume: 1
+    volume: 0.75
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
@@ -27295,7 +27295,7 @@ MonoBehaviour:
     volume: 1
     volumeVariance: 0
     pitch: 1
-    pitchVariance: 0
+    pitchVariance: 0.25
     loop: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
