@@ -217,7 +217,7 @@ public class GameController : MonoBehaviour
     private void ActiveInput()
     {
         pointer.SetActive(true);
-        inputModule.SetActive(true);
+        inputModule.SetActive(true);   // необязятельно при нахождении инпута в поинтере
     }
     
     // UI поражения и победы и звук
