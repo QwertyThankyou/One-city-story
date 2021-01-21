@@ -4952,6 +4952,7 @@ GameObject:
   - component: {fileID: 507415201082696887}
   - component: {fileID: 507415199862498878}
   - component: {fileID: 507415199862498879}
+  - component: {fileID: 4424424012198635244}
   m_Layer: 0
   m_Name: SM_Bld_ProduceStand_01
   m_TagString: Untagged
@@ -5020,6 +5021,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &4424424012198635244
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507415199862498876}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3, y: 3, z: 1.4}
+  m_Center: {x: 0, y: 1.6, z: -0.7}
 --- !u!1 &507415199865630309
 GameObject:
   m_ObjectHideFlags: 0
