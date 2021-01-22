@@ -13,10 +13,8 @@ public class Statistics : MonoBehaviour
     
     void Update()
     {
-        textMesh.text = "Престиж: " + _gameController.prestige + "; Экология: " + _gameController.ecology +
+        textMesh.text = "Экология: " + _gameController.ecology +
                         ";\nМакс. численность: " + _gameController.maxPopulation + "; Жители: " + _gameController.population +
-                        ";\nОжидают работы: " + _gameController.waitingPopulation + "; Работают: " + _gameController.workingPopulation +
-                        ";\nДоступно энергии: " + _gameController.availableEnergy + "; Потребляется: " + _gameController.neededEnergy +
                         ";\nБюджет: " + _gameController.money;
     }
 }

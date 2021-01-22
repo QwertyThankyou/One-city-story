@@ -40,22 +40,14 @@ public class GameController : MonoBehaviour
     //variables
     //
     [Header("Variables")]
-    public int prestige;
     public int ecology;
 
     public int maxPopulation;
     public int population;
-    public int waitingPopulation;
-    public int workingPopulation;
-    //public int arrivingPopulation;
 
     public int money;
     private int _lastMoney;
-    //public int income;
 
-    public int availableEnergy;
-    public int neededEnergy;
-    
     public float gameSeconds;
     public float gameMinutes;
     public int dayNumber = 1;
@@ -223,17 +215,20 @@ public class GameController : MonoBehaviour
     // UI поражения и победы и звук
     public void Restart()
     {
+        Destroy(GameObject.Find("Player"));
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void GoToMenu()
     {
+        Destroy(GameObject.Find("Player"));
         SceneManager.LoadScene("Main Menu");
     }
 
     public void ContinueGame()
     {
         winUI.SetActive(false);
+        pointer.SetActive(false);
         _isContinue = true;
     }
 }

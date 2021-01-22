@@ -2,6 +2,8 @@
 
 public class ShopBuilding : MonoBehaviour
 {
+    public HandShop handShop;
+    
     private Vector3 _defPos;
     private Quaternion _defRot;
     void Start()
@@ -12,7 +14,14 @@ public class ShopBuilding : MonoBehaviour
 
     public void ResetPos()
     {
+        //handShop.isNeed = true;
         gameObject.transform.localPosition = _defPos;
         gameObject.transform.localRotation = _defRot;
+        handShop.isNeed = false;
+    }
+
+    public void Take()
+    {
+        handShop.isNeed = true;
     }
 }
